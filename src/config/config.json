@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "flights",
+    "username": "root",
     "password": "sunpreet",
-    "database": "database_development",
+    "database": "Flights",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "flights",
+    "username": "root",
     "password": "sunpreet",
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "flights",
+    "username": "root",
     "password": "sunpreet",
     "database": "database_production",
     "host": "127.0.0.1",
