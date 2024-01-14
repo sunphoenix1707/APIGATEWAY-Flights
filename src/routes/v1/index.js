@@ -1,7 +1,12 @@
 const express = require('express');
-const {InfoController} = require('../../controllers')
-const router = express.Router();  // acquiring the router from the express object
 
-//setting up my first api
- router.get('/info' ,InfoController.info);
+const { InfoController } = require('../../controllers');
+const { AuthRequestMiddlewares } = require('../../middlewares');
+const userRouter = require('./user-routes');
+const router = express.Router();
+
+router.get('/info', InfoController.info);
+
+router.use('/user', userRouter)
+
 module.exports = router;
